@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>History Of Computers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxemic-component@0.0.17/dist/aframe-proxemic-component.min.js"></script>
+    
+</head>
+  <body>
+    <a-scene  loading-screen="dotsColor: white; backgroundColor: #2E2E2E">
+     
+    <a-assets>
+        <a-asset-item id="Ph" src="phone.glb"></a-asset-item>
+        <a-asset-item id="Cu" src="Retro_Mainframe_Syste_0629150047_texture.glb"></a-asset-item>
+        <a-asset-item id="Cuu" src="univac_computer.glb"></a-asset-item>
+        <a-asset-item id="Co" src="computer_1977.glb"></a-asset-item>
+        <a-asset-item id="Co1" src="1970s_retro_computer.glb"></a-asset-item>
+        <a-asset-item id="Co2" src="free_retro_computer_3d_model.glb"></a-asset-item>
+        <a-asset-item id="Com1" src="3dpea.com_first-pc.glb"></a-asset-item>
+        <a-asset-item id="Com2" src="Retro_Computer_Setup_0630214016_texture.glb"></a-asset-item>
+        <a-asset-item id="desk" src="old_desk.glb"></a-asset-item>
+        <a-asset-item id="desk1" src="computer_desk.glb"></a-asset-item>
+        <a-asset-item id="chair" src="old_wooden_chair.glb"></a-asset-item>
+        <a-asset-item id="chairo" src="office_chair.glb"></a-asset-item>
+        <a-asset-item id="books" src="hand_painted_old_books_geometry_nodes.glb"></a-asset-item>
+        <a-asset-item id="books1" src="books1.glb"></a-asset-item>
+        <a-asset-item id="books2" src="books2.glb"></a-asset-item>
+        <a-asset-item id="door1" src="door 1.glb"></a-asset-item>
+        <a-asset-item id="door1f" src="door 1 frame.glb"></a-asset-item>
+        <a-asset-item id="door2o" src="door 2 opened.glb"></a-asset-item>
+        <a-asset-item id="door2c" src="door 2 closed.glb"></a-asset-item>
+        <a-asset-item id="sofa" src="antique_sofa.glb"></a-asset-item>
+        <a-asset-item id="coach" src="chesterfield_lounge_set.glb"></a-asset-item>
+        <a-asset-item id="tablec" src="wooden_tablechair__low-poly__game-ready.glb"></a-asset-item>
+        <a-asset-item id="tablec1" src="table_and_chairs.glb"></a-asset-item>
+        <a-asset-item id="table" src="wooden_table.glb"></a-asset-item>
+        <a-asset-item id="office" src="office.glb"></a-asset-item>
+        <a-asset-item id="floor" src="floor_tile_material.glb"></a-asset-item>
+        <a-asset-item id="floor2" src="checkered_tile_floor.glb"></a-asset-item>
+        <a-asset-item id="floor3" src="wood_floor_texture.glb"></a-asset-item>
+        <a-asset-item id="floor4" src="seamless__floor_tiled_texture_v.glb"></a-asset-item>
+        <a-asset-item id="laptop" src="laptop_3d_model.glb"></a-asset-item>
+        <a-asset-item id="bed" src="modern_bed.glb"></a-asset-item>
+    </a-assets>
+  
+      <!--<a-plane gltf-model="#floor" rotation="-90 90 0" width="10" height="10" color="blue" shadow></a-plane>-->
+      <a-text value="1950s" color="black" align="center"  width="23" height="23" position="0 2.2 -2.5"> </a-text>
+      <a-plane position="-1 1.2 -5.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-plane position="2 1.2 -5.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-text value="Computers of the 1950s were colossal machines that often occupied entire rooms. Instead of microchips, they relied on thousands of hot and unreliable **vacuum tubes** for processing information." color="black" align="center"  width="1" height="1" position="-1 1.2 -5.5"> </a-text>
+      <a-text value=" Programming was a manual task done with physical media like **punch cards** and magnetic tape, not keyboards and screens.Despite being extremely slow by today's standards, these early computers were revolutionary, performing massive calculations for science, government, and business for the first time."color="black" align="center"  width="1" height="1" position="2 1.2 -5.5"> </a-text>
+      <a-entity gltf-model="#floor" scale="5 5 3.7" position="-5 0 -10" rotation="180 0 0"></a-entity>
+      <a-box position="0 1.5 -10" depth="0.1" height="3" width="10" color="#bca17e"></a-box>
+      <a-box position="-2.7 1.5 -2.6" depth="0.1" height="3" width="4.6" color="#bca17e"></a-box>
+      <a-box position="2.62 1.5 -2.6" depth="0.1" height="3" width="4.68" color="#bca17e"></a-box>
+      <a-box position="0 2.3 -2.6" depth="0.1" height="1.5" width="1" color="#bca17e"></a-box>
+      <a-box position="-4.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-box position="4.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-entity gltf-model="#door1f" scale="0.3 0.3 0.3" position="-1.6 0 -2.55" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#door1" scale="0.3 0.3 0.3" position="-0.37 0 -2.55" rotation="0 90 0" proximity-sensor="distance: 3"
+      animation__open="property: rotation; to: 0 180 0; dur: 6000; startEvents: proximityenter"
+      animation__close="property: rotation; to: 0 90 0; dur: 6000; startEvents: proximityexit"></a-entity>
+      <a-box position="0 3 -6.55" width="10" height="0.1" depth="8" color="#7b4f1c"></a-box>
+      <a-entity gltf-model="#Cu" scale="2 2 2" position="2 1.3 -7.5" ></a-entity>
+      <a-entity gltf-model="#Cu" scale="2 2 2" position="-2 1.3 -7.5" ></a-entity>
+      <a-entity gltf-model="#Cuu" scale="0.8 0.8 0.8" position="-4.3 0.38 -4.6" rotation="0 80 0"></a-entity>
+      <a-entity gltf-model="#desk" scale="1 1 1" position="4.6 -0.1 -4.6" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#chair" scale="1 1 1" position="3.6 0.09 -4.6" rotation="0 90 0"></a-entity>
+
+
+
+      <a-text value="1970s" color="black" align="center"  width="23" height="23" position="10 2.2 -2.5"> </a-text>
+      <a-entity gltf-model="#floor2" scale="0.04 0.04 0.058" position="10 0 -10" rotation="180 0 0"></a-entity>
+      <a-box position="10 1.5 -10" depth="0.1" height="3" width="10" color="#bca17e"></a-box>
+      <a-box position="7.3 1.5 -2.6" depth="0.1" height="3" width="4.6" color="#bca17e"></a-box>
+      <a-box position="12.62 1.5 -2.6" depth="0.1" height="3" width="4.68" color="#bca17e"></a-box>
+      <a-box position="10 2.3 -2.6" depth="0.1" height="1.5" width="1" color="#bca17e"></a-box>
+      <a-box position="5.05 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-box position="14.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-entity gltf-model="#door1f" scale="0.3 0.3 0.3" position="8.4 0 -2.55" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#door1" scale="0.3 0.3 0.3" position="9.63 0 -2.55" rotation="0 90 0" proximity-sensor="distance: 3"
+      animation__open="property: rotation; to: 0 180 0; dur: 6000; startEvents: proximityenter"
+      animation__close="property: rotation; to: 0 90 0; dur: 6000; startEvents: proximityexit"></a-entity>
+      <a-box position="10 3 -6.55" width="10" height="0.1" depth="8" color="#7b4f1c"></a-box>
+      <a-entity gltf-model="#desk1" scale="0.6 0.3 0.3" position="10 0.9 -9.6" ></a-entity>
+      <a-entity gltf-model="#books1" scale="1.5 1.5 1.5" position="7.4 0 -9.6" ></a-entity>
+      <a-entity gltf-model="#books2" scale="1.5 1.5 1.5" position="11.5 0 -9.1" rotation="0 35 0"></a-entity>
+      <a-entity gltf-model="#Co" scale="0.8 0.8 0.8" position="10.7 0.9 -9.6" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#Co2" scale="0.205 0.205 0.205" position="9.3 0.9 -9.7" rotation="0 0 0"></a-entity>
+      <a-entity gltf-model="#sofa" scale="0.05 0.05 0.05" position="6.6 0.1 -4.6" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#tablec" scale="1 1 1" position="13.6 0.09 -4.6" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#chairo" scale="0.008 0.008 0.008" position="9.2 0.1 -8.9" rotation="0 180 0"></a-entity>
+      <a-entity gltf-model="#chairo" scale="0.008 0.008 0.008" position="10.7 0.1 -8.9" rotation="0 180 0"></a-entity>
+      <a-plane position="9 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-plane position="12 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-text value="The 1970s marked the birth of personal computing thanks to the invention of the microprocessor. While large, powerful mainframes were still the standard in big business, the first personal computers like the Apple II and Commodore PET emerged. " color="black" align="center"  width="1" height="1" position="9 1.2 -7.5"> </a-text>
+      <a-text value="These machines were small enough for a desk, often used floppy disks and cassette tapes for storage, and introduced users to command-line interfaces on simple monochrome monitors."color="black" align="center"  width="1" height="1" position="12 1.2 -7.5"> </a-text>
+
+
+
+      <a-text value="1990s" color="black" align="center"  width="23" height="23" position="20 2.2 -2.5"> </a-text>
+      <a-entity gltf-model="#floor3" scale="0.04 0.04 0.058" position="20 0 -10" rotation="180 0 0"></a-entity>
+      <a-box position="20 1.5 -10" depth="0.1" height="3" width="10" color="#bca17e"></a-box>
+      <a-box position="17.3 1.5 -2.6" depth="0.1" height="3" width="4.6" color="#bca17e"></a-box>
+      <a-box position="22.62 1.5 -2.6" depth="0.1" height="3" width="4.68" color="#bca17e"></a-box>
+      <a-box position="20 2.3 -2.6" depth="0.1" height="1.5" width="1" color="#bca17e"></a-box>
+      <a-box position="15.05 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-box position="24.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-entity gltf-model="#door1f" scale="0.3 0.3 0.3" position="18.4 0 -2.55" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#door1" scale="0.3 0.3 0.3" position="19.63 0 -2.55" rotation="0 90 0" proximity-sensor="distance: 3"
+      animation__open="property: rotation; to: 0 180 0; dur: 6000; startEvents: proximityenter"
+      animation__close="property: rotation; to: 0 90 0; dur: 6000; startEvents: proximityexit"></a-entity>
+      <a-box position="20 3 -6.55" width="10" height="0.1" depth="8" color="#7b4f1c"></a-box>
+      <a-entity gltf-model="#desk1" scale="0.6 0.3 0.3" position="20 0.9 -9.6" ></a-entity>
+      <a-entity gltf-model="#books1" scale="1.5 1.5 1.5" position="17.4 0 -9.6" ></a-entity>
+      <a-entity gltf-model="#books2" scale="1.5 1.5 1.5" position="21.5 0 -9.2" rotation="0 35 0"></a-entity>
+      <a-entity gltf-model="#Com1" scale="0.03 0.03 0.03" position="20.7 0.95 -9.6" rotation="0 0 0"></a-entity>
+      <a-entity gltf-model="#Com2" scale="0.5 0.5 0.5" position="19.3 1.25 -9.9" rotation="0 0 0"></a-entity>
+      <a-entity gltf-model="#coach" scale="2.5 2.5 2.5" position="16.6 0.4 -4.7" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#tablec1" scale="1 1 1" position="23.6 0.09 -4.6" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#table" scale="2.5 2.5 2.5" position="24.4 -0.01 -9" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#Ph" scale="0.015 0.015 0.015" position="24.4 0.63 -9" rotation="0 -90 0"></a-entity>
+      <a-entity gltf-model="#chairo" scale="0.008 0.008 0.008" position="19.2 0.1 -8.9" rotation="0 180 0"></a-entity>
+      <a-entity gltf-model="#chairo" scale="0.008 0.008 0.008" position="20.7 0.1 -8.9" rotation="0 180 0"></a-entity>
+      <a-plane position="19 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-plane position="22 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-text value="This was the decade the computer and the internet went mainstream. The iconic beige desktop PC, running a graphical user interface (GUI) like Windows 95, became a common household item. People started using a mouse to point and click instead of typing commands." color="black" align="center"  width="1" height="1" position="19 1.2 -7.5"> </a-text>
+      <a-text value="CD-ROMs delivered multimedia games and software, and the world came online through the slow, screeching sounds of a dial-up modem connecting to the World Wide Web."color="black" align="center"  width="1" height="1" position="22 1.2 -7.5"> </a-text>
+
+      <a-text value="2010s" color="black" align="center"  width="23" height="23" position="30 2.2 -2.5"> </a-text>
+      <a-entity gltf-model="#floor4" scale="3.3 2 2.48" position="35 0 -10" rotation="180 0 0"></a-entity>
+      <a-box position="30 1.5 -10" depth="0.1" height="3" width="10" color="#bca17e"></a-box>
+      <a-box position="27.3 1.5 -2.6" depth="0.1" height="3" width="4.6" color="#bca17e"></a-box>
+      <a-box position="32.62 1.5 -2.6" depth="0.1" height="3" width="4.68" color="#bca17e"></a-box>
+      <a-box position="30 2.3 -2.6" depth="0.1" height="1.5" width="1" color="#bca17e"></a-box>
+      <a-box position="25.05 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-box position="34.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="#bca17e"></a-box>
+      <a-entity gltf-model="#door1f" scale="0.3 0.3 0.3" position="28.4 0 -2.55" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#door1" scale="0.3 0.3 0.3" position="29.63 0 -2.55" rotation="0 90 0" proximity-sensor="distance: 3"
+      animation__open="property: rotation; to: 0 180 0; dur: 6000; startEvents: proximityenter"
+      animation__close="property: rotation; to: 0 90 0; dur: 6000; startEvents: proximityexit"></a-entity>
+      <a-box position="30 3 -6.55" width="10" height="0.1" depth="8" color="#7b4f1c"></a-box>
+      <a-entity gltf-model="#desk1" scale="0.6 0.3 0.3" position="10 0.9 -9.6" ></a-entity>
+      <a-entity gltf-model="#books1" scale="1.5 1.5 1.5" position="7.4 0 -9.6" ></a-entity>
+      <a-entity gltf-model="#books2" scale="1.5 1.5 1.5" position="11.5 0 -9.3" rotation="0 35 0"></a-entity>
+      <a-entity gltf-model="#Co" scale="0.8 0.8 0.8" position="10.7 0.9 -9.6" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#Co2" scale="0.205 0.205 0.205" position="9.3 0.9 -9.9" rotation="0 0 0"></a-entity>
+      <a-entity gltf-model="#office" scale="0.03 0.03 0.03" position="30 0 -8.4" rotation="0 180 0"></a-entity>
+      <a-entity gltf-model="#laptop" scale="1 1 1" position="29 0.9 -9.2" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#bed" scale="1 1 1" position="26 0.3 -4" rotation="0 180 0"></a-entity>
+      <a-plane position="29 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-plane position="32 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-text value="In the 2010s, the primary computer became a device that fits in your pocket. The rise of smartphones and tablets defined the decade, with touchscreens becoming the main interface for billions of people." color="black" align="center"  width="1" height="1" position="29 1.2 -7.5"> </a-text>
+      <a-text value="Cloud computing became essential, moving our files and software from local hard drives to online services. High-speed, always-on internet made streaming, social media, and a world of interconnected apps a central part of daily life."color="black" align="center"  width="1" height="1" position="32 1.2 -7.5"> </a-text>
+
+
+
+      <a-text value="Future" color="black" align="center"  width="23" height="23" position="40 2.2 -2.5"> </a-text>
+      <a-box position="40 1.5 -10" depth="0.1" height="3" width="10" color="black"></a-box>
+      <a-box position="37.3 1.5 -2.6" depth="0.1" height="3" width="4.6" color="#bca17e"></a-box>
+      <a-box position="42.62 1.5 -2.6" depth="0.1" height="3" width="4.68" color="#bca17e"></a-box>
+      <a-box position="40 2.3 -2.69" depth="0.01" height="1.5" width="1" color="black"></a-box>
+      <a-box position="37.3 1.5 -2.69" depth="0.01" height="3" width="4.6" color="black"></a-box>
+      <a-box position="42.62 1.5 -2.69" depth="0.01" height="3" width="4.68" color="black"></a-box>
+      <a-box position="40 2.3 -2.6" depth="0.1" height="1.5" width="1" color="#bca17e"></a-box>
+      <a-box position="35.05 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="black"></a-box>
+      <a-box position="44.95 1.5 -6.55" rotation="0 90 0" depth="0.1" height="3" width="8" color="black"></a-box>
+      <a-entity gltf-model="#door1f" scale="0.3 0.3 0.3" position="38.4 0 -2.55" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#door1" scale="0.3 0.3 0.3" position="39.63 0 -2.55" rotation="0 90 0" proximity-sensor="distance: 3"
+      animation__open="property: rotation; to: 0 180 0; dur: 6000; startEvents: proximityenter"
+      animation__close="property: rotation; to: 0 90 0; dur: 6000; startEvents: proximityexit"></a-entity>
+      <a-box position="40 3 -6.55" width="10" height="0.1" depth="8" color="black"></a-box>
+      <a-entity gltf-model="#desk1" scale="0.6 0.3 0.3" position="10 0.9 -9.6" ></a-entity>
+      <a-entity gltf-model="#books1" scale="1.5 1.5 1.5" position="7.4 0 -9.6" ></a-entity>
+      <a-entity gltf-model="#books2" scale="1.5 1.5 1.5" position="11.5 0 -9.3" rotation="0 35 0"></a-entity>
+      <a-entity gltf-model="#Co" scale="0.8 0.8 0.8" position="10.7 0.9 -9.6" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#Co2" scale="0.205 0.205 0.205" position="9.3 0.9 -9.9" rotation="0 0 0"></a-entity>
+      <a-entity gltf-model="#tablec" scale="1 1 1" position="13.6 0.09 -4.6" rotation="0 90 0"></a-entity>
+      <a-plane position="39 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-plane position="42 1.2 -7.5" width="1" height="0.4" color="#FFFFFF" shadow></a-plane>
+      <a-text value="The future of technology isn't a distant story we read about; it's a reality being written right now, line by line. The authors of this future are young programmers like us.In our minds are the next revolutionary ideas, and at our fingertips is the power to turn them into code that will reshape industries and change daily life." color="black" align="center"  width="1" height="1" position="39 1.2 -7.5"> </a-text>
+      <a-text value="The only limit is the one we place on ourselves.So, let's expand our imagination, challenge the impossible, and dare to build the world we dream of. The future is the code we have yet to write."color="black" align="center"  width="1" height="1" position="42 1.2 -7.5"> </a-text>
+
+
+      
+     <!-- <a-entity gltf-model="#books" scale="0.7 0.7 0.7" position="4.0 1.09 -4.6" rotation="0 180 0"></a-entity> -->
+      <a-entity camera wasd-controls="acceleration: 5" look-controls position="0 1 0">
+          
+          
+        </a-entity>
+     
+      <a-entity light="type: ambient; intensity: 0.5"></a-entity>
+      <a-entity light="type: directional; intensity: 0.8" position="1 3 1"></a-entity>
+    </a-scene>
+  </body>
+</html>
+ 
+   
